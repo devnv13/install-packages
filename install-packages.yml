@@ -1,5 +1,7 @@
 - name: Install New Packages
   hosts: all
+  remote_user: ansible
+  become: yes
 
   tasks:
    - name: Install packages
